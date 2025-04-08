@@ -1,6 +1,451 @@
+
+:root {
+	/* Default colors used in self-serve */
+	--dss_white: #fff;
+	--dss_black: #000;
+	--charcoal: #4a4a4a;
+	--royalblue: #4285f4;
+	--dss_dark_blue: #0720f5;
+	--bermudagrey: #171f24;
+	--nobel: #9b9b9b;
+	--casper: #aab2b7;
+	--dss_crimson: #dc143c;
+	--dss_white_smoke: #f1f1f1;
+	--lightgrey: #d4d4d4;
+	--blueviolet: #9025fc;
+	--pattensblue: #d7dde1;
+	--cardinal: #c31533;
+	--dss_light_pink: #ffe2e7;
+	--dss_light_green: #96d1984d;
+	--dss-brand-navbar: #fff;
+	--dss-track-status-icon: #fff;
+    --dss_fresh_mint: #14EF79;
+
+	/* Text Colors */
+	--bdy-bg-clr: var(--dss_white);               /* Body background color */
+	--bdy-txt-clr: var(--charcoal);               /* Body text color */
+	--frm-txt-color: var(--charcoal);             /* Forms text color - Drop down, Input box, etc .. */
+	--page-title-clr: var(--bermudagrey);         /* Page title text color */
+	--lnk-txt-clr: var(--charcoal);               /* Anchor link text color */
+	--link-clr: var(--dss_black);                  /* link color */
+	--note-clr: var(--charcoal);                     /* General note text color */
+	--err-txt-clr: var(--dss_crimson);            /* Error text color */
+	--border-color: var(--pattensblue);           /* bordor color */
+	--text-dss-black: var(--dss_black);           /* smaller title text */
+	--navbar-links-clr: var(--lnk-txt-clr);		  /* color for navbar links */
+	--text-grey-clr: var(--nobel);
+
+	/* Primary Button styles */
+	--primary-btn-bg-clr: var(--dss_black);         /* Background color */
+	--primary-btn-txt-clr: var(--dss_white);       /* Text color */
+	--primary-btn-bdr-clr: var(--dss_black);        /* Border color */
+	--primary-btn-bg-clr-active: var(--dss_black);  /* Background color when active */
+	--primary-btn-bdr-clr-active: var(--dss_black); /* Border color when active*/
+
+	/* Secondary Button styles */
+	--secondary-btn-bg-clr: var(--dss_white);     /* Background color */
+	--secondary-btn-txt-clr: var(--dss_black);     /* Text color */
+	--secondary-btn-bdr-clr: var(--dss_black);     /* Border color */
+
+	/* Disabled Button styles */
+	--disabled-btn-bg-clr: var(--dss_black);       /* Background color */
+	--disabled-btn-txt-clr: var(--dss_white);     /* Text color */
+	--disabled-btn-bdr-clr: var(--pattensblue);   /* Border color */
+
+	/* button/checkBox focus color after selected */
+	--focus-clr: rgba(0, 123, 255, 0.25);
+
+	/* Card styles colors */
+	--card-hdr-bg-clr: var(--dss_black);           /* Card header background color */
+	--card-title-clr: var(--dss_white);           /* Card header title text color */
+	--card-bdr-clr: var(--nobel);                 /* Card border color */
+	--shadow-black: rgba(0, 0, 0, 0);     		/* Shadow style for card */
+
+	/* Background colors */
+	--ftr-bg-clr: var(--dss_white_smoke);               /* Footer background color */
+	--ftr-steps-active-bg-clr: var(--dss_black);
+	--frm-chk-act-bg-clr: var(--dss_black);
+	--sidebar-bg-clr: var(--dss_white);
+	--logo-bg-clr: var(--dss_white);
+	--card-bg-clr: var(--dss_white);
+
+	/* Border colors */
+	--gnrl-bdr-clr: var(--nobel);                  /* Common border color used for input, dropdowns, etc */
+	--divider-clr: var(--pattensblue);             /* Border color used between the sections, lists, etc */
+	--ftr-steps-active-bdr-clr: var(--dss_black);
+	--frm-chk-act-bdr-clr: var(--dss_black);
+	--bdr-danger-clr: var(--dss_black);
+
+	/* Border size */
+	--gnrl-bdr-size: 1px;                    /* Common border size */
+
+	/* Corner radius */
+	--card-bdr-radius: 0.5rem;               /* Card border radius */
+
+	/* Item description and store name */
+	--store-name-color: var(--dss_black);
+	--item-name-color: var(--dss_black);
+
+	/* Badge color */
+	--badge-bg-clr: var(--dss_black);
+	--badge-clr: var(--dss_white);
+
+	/* Phone and Map Icon Color */
+	--phone-icon-clr: var(--dss_white);
+	--map-icon-clr: var(--dss_white);
+
+	/* Contact us icon color and background */
+	--contact-us-icon-clr: var(--dss_white);
+	--contact-us-icon-bg-clr: var(--dss_black);
+
+	/* Contact us label color and background */
+	--contact-us-label-bg-color: var(--dss_white);
+	--contact-us-label-color: var(--charcoal);
+
+	/*Contact customer service variable*/
+	--contact-customer-icon-color: var(--dss_black);
+	--contact-customer-border-color: var(--dss_black);
+	--contact-customer-background-color: var(--dss_white);
+
+	/* Calandar color */
+	--calendar-active-color: var(--dss_dark_blue);
+
+	/*Pickup UI Variqble */
+	--pickup-success-respnse-bg-clr: var(--dss_light_green);
+	--pickup-error-response-bg-clr: var(--dss_light_pink);
+
+	/*Logo height Adjustment*/
+	--logo-height: 6rem;
+
+	/* Font-sizes */
+	--xx-small: 0.6rem;
+	--x-small: 0.8rem;
+	--small: 0.9rem;
+	--small-x: 0.9375rem;
+	--medium: 1rem;
+	--medium-x: 1.2rem;
+	--x-large: 1.3rem;
+	--large: 1.5rem;
+	--large-x: 2rem;
+	--large-xx: 2.5rem;
+	--large-xxx: 3rem;
+	--navbar-links-small: 1rem;
+
+	/* Font family  declarations */
+	--family: 'Montserrat';
+	--size: var(--medium);
+	--weight: 400;
+	--style: normal;
+	--line-height: var(--medium-x);
+
+	/* Chatbot variables */
+	--chatbot-header-bg : var(--cardinal);
+	--chatbot-bg-color: var(--dss_white);
+	--chatbot-outgoing-message-bg: var(--charcoal);
+	--chatbot-outgoing-message-color: var(--dss_white);
+	--chatbot-incoming-message-bg: var(--lightgrey);
+	--chatbot-incoming-message-color: var(--dss_black);
+  --chabot-feedback-success-banner: var(--dss_fresh_mint);
+  --chabot-feedback-success-text: var(--dss_black);
+}
+
+/* Default Font family */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoRegular';
+	font-weight: 400;
+	src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MontserratBold';
+	font-weight: bold;
+	src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MontserratSemiBold';
+	font-weight: bold;
+	src: url('../assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MontserratMedium';
+	font-weight: bold;
+	src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+/* End of Default Font family */
+
+/* Initialize the default styling */
+body {
+	font-family: var(--family) , sans-serif;
+	font-size: var(--small);
+	font-style: var(--style);
+	font-weight: var(--weight);
+	line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: var(--family) , sans-serif;
+	font-style: var(--style);
+}
+
+h1 {
+	font-size: var(--x-large);
+	font-weight: var(--weight);
+	line-height: var(--line-height);
+}
+
+h2 {
+	color: var(--page-title-clr);
+	font-size: var(--medium-x);
+	font-weight: 700;
+	line-height: var(--large-x);
+}
+
+h3 {
+	color: var(--card-title-clr);
+	font-size: var(--x-large);
+	font-weight: var(--weight);
+	line-height: var(--line-height);
+}
+
+h4 {
+	font-size: var(--medium-x);
+	font-weight: 700;
+	line-height: var(--line-height);
+}
+
+h5 {
+	font-size: var(--medium);
+	font-weight: 700;
+	line-height: var(--line-height);
+}
+
+h6 {
+	font-size: var(--small);
+	font-weight: var(--weight);
+	line-height: var(--line-height);
+}
+
+p {
+	font-size: var(--size);
+	font-weight: var(--weight);
+	line-height: var(--line-height);
+}
+
+/* End of default styling */
+
+/* -------------------------- Images ---------------------------*/
+
 .logo {
   background: url("https://media.4-paws.org/b/8/d/5/b8d5441fec6b84e9c3cba899549b84bb0f193fff/VIER%20PFOTEN_2019-07-18_013-2890x2000.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
+
+.drop-down-arrow {
+	background: url('../assets/img/down-arrow.svg');
+}
+
+.delivered {
+	background-image: url('../assets/img/Delivered-new.svg');
+}
+
+.onitsway {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+.intransit {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+.return-tracking-status-icon-intransit {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+.return-tracking-status-icon-default-pendingreturn {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+
+.return-tracking-status-icon-delivered-receivedreturn {
+	background-image: url('../assets/img/Delivered-new.svg');
+
+}
+
+.return-tracking-status-icon-default-receivedreturn {
+	background-image: url('../assets/img/Delivered-new.svg');
+
+}
+
+.return-tracking-status-icon-delivered-partiallyreceived {
+    background-image: url('../assets/img/Delivered-new.svg');
+
+}
+
+.return-tracking-status-icon-default-partiallyreceived {
+    background-image: url('../assets/img/Delivered-new.svg');
+
+}
+
+.return-tracking-status-icon-delivered-partiallyreturned {
+    background-image: url('../assets/img/Delivered-new.svg');
+}
+
+.return-tracking-status-icon-default-partiallyreturned {
+    background-image: url('../assets/img/Delivered-new.svg');
+}
+
+
+.return-tracking-status-icon-intransit-partiallypendingapproval {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+.return-tracking-status-icon-default-partiallypendingapproval {
+	background-image: url('../assets/img/Onitsway-new.svg');
+}
+
+.return-tracking-status-icon-delivered-returned {
+	background-image: url('../assets/img/Delivered-new.svg');
+}
+
+.return-tracking-status-icon-default-returned {
+	background-image: url('../assets/img/Delivered-new.svg');
+}
+
+.return-tracking-status-icon-delivered-pendingreturn {
+	background-image: url('../assets/img/Delivered-new.svg');
+}
+
+.return-mode-store-icon {
+	background-image: url('../assets/img/store-duotone.svg');
+}
+
+.return-mode-mail-icon {
+	background-image: url('../assets/img/box-alt-duotone.svg');
+}
+
+.return-mode-qr-icon {
+	background-image: url('../assets/img/icon-printerless-dropoff.svg');
+}
+
+/* Newer SVGs */
+.delivered-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.onitsway-new {
+	mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.intransit-new {
+    mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-intransit-new {
+	mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-pendingreturn-new {
+	mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-delivered-receivedreturn-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-receivedreturn-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-delivered-partiallyreceived-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-partiallyreceived-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-delivered-partiallyreturned-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-partiallyreturned-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-intransit-partiallypendingapproval-new {
+	mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-partiallypendingapproval-new {
+	mask: url('../assets/img/onitsway.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-delivered-returned-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-default-returned-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.return-tracking-status-icon-delivered-pendingreturn-new {
+	mask: url('../assets/img/delivered.svg') no-repeat 50% 50%;
+}
+
+.tracking-icon-bg-color {
+	background-color: var(--dss-track-status-icon);
+}
+
+.dss-feedback-submitted {
+	mask: url('../assets/img/Icon_Feedback_Submitted.svg') no-repeat 50% 50%;
+}
+
+.dss-validated-icon {
+	mask: url('../assets/img/Icon_Feedback_Submitted.svg') no-repeat 50% 50%;
+}
+
+.substituted-icon {
+	background-image: url('../assets/img/Icon_Substitutions.svg');
+}
+
+.edit-icon {
+	background-image: url('../assets/img/Icon_Edit.svg');
+}
+
+.add-icon {
+	background-image: url('../assets/img/Icon_Add.svg');
+}
+
+/* Newer SVGs ends here */
+/* ------------------------------- End of Images ---------------------------*/
+
+
+/* navbar styling */
+
+.navbar-light .navbar-nav .nav-link {
+	color: var(--navbar-links-clr);
+	font-size: var(--navbar-links-small);
+}
+
+@media screen and (max-width:1200px) {
+	.navbar-collapse.show .navbar-nav {
+		background-color: var(--dss-brand-navbar);
+	}
+}
+
+/* navbar styling ends here */
